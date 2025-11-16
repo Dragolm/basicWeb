@@ -1,0 +1,23 @@
+h1 {
+    background-color: blue;
+}
+#tged{
+    background-color: red;
+    font-family: 'Franklin Gothic Medium';
+}
+.para{
+    color: blue;
+}
+
+body {
+    justify-content: center;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    border-radius: 10px;
+}

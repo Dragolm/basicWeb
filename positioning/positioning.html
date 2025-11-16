@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+</head>
+<body>
+    <div id="main-description" class="card">
+        <h1>Positioning</h1>
+        <p>This is a css style property used to define where the item lies and modify its position.
+            <br>
+            <br>
+            It has 5 values: 
+            <ul id="types">
+            <li>static</li>
+            <li>relative</li>
+            <li>fixed</li>
+            <li>sticky</li>
+            <li>absolute</li>
+            </ul>
+        </p>
+    </div>
+    <div class="card">
+        <h1 class="heading">STATIC</h1>
+        <p class="description">
+            This is the default property and is applied automatically to all elements when position isn't mentioned.
+        </p>
+    </div>
+    <div class="card">
+        <h1 class="heading">RELATIVE</h1>
+        <p class="description">
+            When an element is set to have relative position one can vary the location of the element relative to the position it would have had by default.
+        </p>
+    </div>
+    <div class="card">
+        <h1 class="heading">FIXED</h1>
+        <p class="description">
+            This let's us fix the position of the element somewhere on the screen and it will stay there even when you scroll. This element will be rendered in a different layer and thus overlaps the other elements. You can manage the ovelaps using the z-index property.
+        </p>
+    </div>
+    <div class="card">
+        <h1 class="heading">STICKY</h1>
+        <p class="description">
+            This is a secret lovechild of static and fixed, because it acts like a static element at first but the once you scroll down it and it hits the position you set using(top, left, right and/or bottom) it will become like fixed and stick to your screen and persist with scroll at the specified position. Scroll back to it's original position and it turns back to it's static personality.
+        </p>
+    </div>
+    <div class="card">
+        <h1 class="heading">ABSOLUTE</h1>
+        <p class="description">
+            This is similar to relative but instead of offsetting the element based on it normal position this will position the element based of it's nearest ancestor element that has a defined position. If none of it's parent elements have a position property then it will be offset with respect to the body element.
+        </p>
+    </div>
+    <div class="example">
+        <h2 class="example-text">static</h2>
+    </div>
+    <div class="example" id="relative">
+        <h2 class="example-text">relative</h2>
+    </div>
+    <div class="example" id="sticky">
+        <h2 class="example-text">sticky</h2>
+    </div>
+    <div class="example" id="fixed">
+        <h2 class="example-text">fixed</h2>
+    </div>
+    <div id="absolute-parent">
+        <div class="example" id="absolute">
+            <h2 class="example-text">absolute</h2>
+        </div>
+    </div>
+</body>
+</html>
